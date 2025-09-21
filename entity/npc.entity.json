@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:npc",
+            "materials": {
+                "default": "npc"
+            },
+            "textures": {
+                "npc_1": "textures/entity/npc/npc_1",
+                "npc_2": "textures/entity/npc/npc_2",
+                "npc_3": "textures/entity/npc/npc_3",
+                "npc_4": "textures/entity/npc/npc_4",
+                "npc_5": "textures/entity/npc/npc_5",
+                "npc_6": "textures/entity/npc/npc_6",
+                "npc_7": "textures/entity/npc/npc_7",
+                "npc_8": "textures/entity/npc/npc_8",
+                "npc_9": "textures/entity/npc/npc_9",
+                "npc_10": "textures/entity/npc/npc_10",
+                "npc_11": "textures/entity/npc/npc_11"
+            },
+            "geometry": {
+                "default": "geometry.customnpc.locator",
+                "wide": "geometry.customnpc.wide",
+                "slim": "geometry.customnpc.slim"
+            },
+            "scripts": {
+                "pre_animation": ["variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"],
+                "animate": ["bob", {
+                    "move": "query.modified_move_speed"
+                }, "look_at_target"]
+            },
+            "animations": {
+                "bob": "animation.humanoid.bob",
+                "look_at_target": "animation.common.look_at_target",
+                "move": "animation.humanoid.move"
+            },
+            "render_controllers": ["controller.render.locator", "controller.render.npc_model"],
+            "spawn_egg": {
+                "texture": "spawn_egg",
+                "texture_index": 35
+            },
+            "enable_attachables": true
+        }
+    }
+}

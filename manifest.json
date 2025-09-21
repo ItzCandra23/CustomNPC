@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Custom NPC",
+		"description": "A resource pack for adds more npc skins ByItzCandra23",
+		"uuid": "ca5f968f-4f3a-4b92-9641-5f764b33e711",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 20, 0]
+	},
+	"metadata": {
+		"authors": ["ItzCandra23"],
+		"license": "MIT",
+		"url": "https://github.com/ItzCandra23/CustomNPC"
+	},
+	"modules": [
+		{
+			"description": "Custom NPC",
+			"type": "resources",
+			"uuid": "c0dd32ed-c8c0-4dde-80ab-c2edcc15c41e",
+			"version": [1, 0, 0]
+		}
+	]
+}
